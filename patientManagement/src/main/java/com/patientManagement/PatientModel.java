@@ -1,11 +1,8 @@
-package com.patientManagementSystem.model;
+package com.patientManagement;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
-@Entity
+@Entity(name = "patient_model")
 public class PatientModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,10 +12,14 @@ public class PatientModel {
     private String healthIssue;
 
 
-    public PatientModel(String name, int age, String healthIssue) {
+    public PatientModel(String name, int age, String healthIssues) {
         this.name = name;
         this.age = age;
-        this.healthIssue = healthIssue;
+        this.healthIssue = healthIssues;
+    }
+
+    public PatientModel() {
+
     }
 
     // Getters and setters

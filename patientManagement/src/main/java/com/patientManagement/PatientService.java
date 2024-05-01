@@ -1,10 +1,10 @@
-package com.patientManagementSystem.service;
+package com.patientManagement;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.patientManagementSystem.model.PatientModel;
-import com.patientManagementSystem.repo.PatientRepository;
+import com.patientManagement.PatientModel;
+import com.patientManagement.PatientRepository;
 
 import java.util.List;
 import java.util.Optional;
